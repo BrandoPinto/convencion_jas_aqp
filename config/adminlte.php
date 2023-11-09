@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Inicio de Sesión',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -63,8 +63,8 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    'logo' => '<b>Convención</b> JAS 2023',
+    'logo_img' => 'https://scontent.faqp3-1.fna.fbcdn.net/v/t39.30808-6/398978690_644548811197932_6833661168364710985_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHJu_CVqNFaEPdQOedSG6jtp5Vx9lxIQqWnlXH2XEhCpZeljSdyLIkyBEEy-cq9t4fSrNoMT9MRVNq8TirJ0B-j&_nc_ohc=6RcS1FZ7wxgAX8UV1OE&_nc_ht=scontent.faqp3-1.fna&oh=00_AfChEqtxa54s98ieNVQcmj2feZV9iiZClFAb0e9Bb4Rcrg&oe=6551B5E2',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -109,11 +109,11 @@ return [
     'preloader' => [
         'enabled' => true,
         'img' => [
-            'path' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
-            'alt' => 'AdminLTE Preloader Image',
+            'path' => 'https://mir-s3-cdn-cf.behance.net/project_modules/disp/f1055231234507.564a1d234bfb6.gif',
+            'alt' => 'Preloader Image',
             'effect' => 'animation__shake',
-            'width' => 60,
-            'height' => 60,
+            'width' => 100,
+            'height' => 100,
         ],
     ],
 
@@ -167,12 +167,12 @@ return [
     |
     */
 
-    'classes_auth_card' => 'card-outline card-primary',
-    'classes_auth_header' => '',
+    'classes_auth_card' => '',
+    'classes_auth_header' => 'bg-warning',
     'classes_auth_body' => '',
     'classes_auth_footer' => '',
-    'classes_auth_icon' => '',
-    'classes_auth_btn' => 'btn-flat btn-primary',
+    'classes_auth_icon' => 'color-warning',
+    'classes_auth_btn' => 'btn-flat btn-warning',
 
     /*
     |--------------------------------------------------------------------------
@@ -256,8 +256,8 @@ return [
     'dashboard_url' => 'home',
     'logout_url' => 'logout',
     'login_url' => 'login',
-    'register_url' => 'register',
-    'password_reset_url' => 'password/reset',
+    'register_url' => '',
+    'password_reset_url' => '',
     'password_email_url' => 'password/email',
     'profile_url' => false,
 
@@ -292,11 +292,6 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'type'         => 'navbar-search',
-            'text'         => 'search',
-            'topnav_right' => true,
-        ],
-        [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
         ],
@@ -312,77 +307,53 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'far fa-fw fa-file',
+            'text'        => 'Inicio',
+            'url'         => 'home',
+            'icon'        => 'fas fa-home',
             'label'       => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'ESTACAS Y DISTRITOS'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Estacas',
+            'url'  => '#',
+            'icon' => 'fas fa-building',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Distritos',
+            'url'  => '#',
+            'icon' => 'fas fa-building',
+        ],
+        ['header' => 'BARRIOS Y RAMAS'],
+        [
+            'text' => 'Barrios',
+            'url'  => '#',
+            'icon' => 'fas fa-warehouse',
         ],
         [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-                [
-                    'text'    => 'level_one',
-                    'url'     => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url'  => '#',
-                        ],
-                        [
-                            'text'    => 'level_two',
-                            'url'     => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url'  => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url'  => '#',
-                ],
-            ],
+            'text' => 'Ramas',
+            'url'  => '#',
+            'icon' => 'fas fa-warehouse',
         ],
-        ['header' => 'labels'],
+        ['header' => 'LISTADO DE INSCRITOS'],
         [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
+            'text' => 'Listado',
+            'url'  => '#',
+            'icon' => 'fas fa-clipboard',
         ],
+        ['header' => 'MATRIMONIOS'],
         [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
+            'text' => 'Listado',
+            'url'  => '#',
+            'icon' => 'fas fa-ring',
         ],
+        ['header' => 'FAMILIAS'],
         [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
+            'text' => 'Listado',
+            'url'  => '#',
+            'icon' => 'fas fa-house-user',
         ],
+        
     ],
 
     /*

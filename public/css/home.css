@@ -1,0 +1,20 @@
+.name {
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos (...) cuando el texto se desborda */
+    max-width: 100%; /* Asegura que el texto no exceda el ancho del contenedor */
+}
+
+@media (min-width: 768px) {
+    .name {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .name {
+        font-size: 18px;
+    }
+}
